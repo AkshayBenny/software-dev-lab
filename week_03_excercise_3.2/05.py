@@ -1,8 +1,8 @@
 def strToInt(strNum):
-    if (strNum.isdigit()):
+    try:
         print(int(strNum) + 10)
-    else:
+    except:
         print("Error")
 
 
-strToInt("4")
+strToInt("4asdsd")
