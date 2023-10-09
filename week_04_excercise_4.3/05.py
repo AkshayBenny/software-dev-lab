@@ -1,10 +1,10 @@
-def reset_dict(dict):
-    
-    for k, v in dict.items():
-        dict.pop(k)
-    print(dict)
-    # return cleared_dict
+def update_dict(d):
+    d.clear()
+    d["a"] = 1
+    d["b"] = 2
+
+    return d
 
 
-color_dict = reset_dict({"Name": [], "Address": [], "Age": []})
-Learn
+d2 = {}
+print(update_dict(d2))
