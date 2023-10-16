@@ -10,7 +10,6 @@ def beetle_game():
         2: 'antenna',
         1: 'eye'
     }
-
     beetle_dict = {
         'body': 0,
         'head': 0,
@@ -19,12 +18,13 @@ def beetle_game():
         'antenna': 0,
         'eye': 0,
     }
+
     die_roll_count = 0
     die_roll_freq = []
-
     game_count = 1
 
     while game_count <= 100:
+
         while True:
             die_roll = random.randint(1, 6)
 
