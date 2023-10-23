@@ -1,15 +1,15 @@
 class Purchase:
-    def __init__(self, customer_id, item_id, amount_paid):
+    def __init__(self, customer_id, item_id, amount_paid=float):
         self.customer_id = customer_id
         self.item_id = item_id
         self.amount_paid = float(amount_paid)
 
 
 class Customer:
-    def __init__(self, id, first_name, surname):
+    def __init__(self, id, first_name, last_name):
         self.id = id
         self.first_name = first_name
-        self.surname = surname
+        self.last_name = last_name
         self.purchases = []
 
     def add_purchase(self, purchase):
@@ -27,10 +27,9 @@ class Customer:
         return total
 
 
-# Example usage
 customers = [
-    Customer(1, "Amiee", "Greene"),
-    Customer(2, "Maia", "Morley"),
+    Customer(1, "John", "Doe"),
+    Customer(2, "Jane", "Doe"),
 ]
 
 purchases = [

@@ -1,7 +1,8 @@
 def update_dict(d):
     d.clear()
-    d["a"] = 1
-    d["b"] = 2
+
+    d["red"] = 1
+    d["blue"] = 2
 
     return d
 
